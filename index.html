@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Journal</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"></link>
+</head>
+<body>
+    <header>
+        <h1>My Learning Journal</h1>
+    </header>
+    <main>
+        <section>
+        <h2>Sprint 1 - My Tribe</h2>
+        <h3>Week 1</h3>
+        <h4>College: webtechnologie</h4>
+        <p>
+            Hoe werkt het internet?
+            Je apparaat stuurt een HTTP Request naar de cloud, deze kijkt vervolgens in de server. 
+            De server kijkt met het gekregen adres naar de bijbehorende bestanden. 
+            De bestanden worden vervolgens in een HTTP Response terug gestuurd naar je apparaat.
+        </p>
+        <h4>HTML</h4>
+        <p>
+            HTML is het skelet van de pagina, hier komt alle informatie en content in. 
+            Het werkt op basis van de DOM (Document Object Model). Het is bij HTML van belang
+            dat je de elementen nest op de correcte manier. Een &lt;h1&gt; kan bijvoorbeeld goed in een &lt;header&gt;, maar een &lt;main&gt; kan niet in een &lt;p&gt;.
+        </p>
+        <h4>CSS</h4>
+        <p>
+            CSS is de huid van de website. Het bepaald hoe de website er uit komt te zien.
+            In CSS (Cascading Style Sheet) werk je met verschillende selectoren om het juiste element te wijzigen.
+        </p>
+        <ul>
+            <li>*</li>
+            <li>.class</li>
+            <li>#id</li>
+            <li>p</li>
+            <li>p, h1</li>
+            <li>p h1</li>
+            <li>p > h1</li>
+            <li>p + h1</li>
+            <li>p ~ h1</li>
+            <li>a:link</li>
+            <li>:[target]</li>
+            <li>a[href:]</li>
+            <li>p::after</li>
+            <li>p::before</li>
+            <li>p:nth-of-type</li>
+        </ul>
+        <h4>JS</h4>
+        <p>
+            Javascript is voor het gedrag van de website.
+            Document.queryselector("p.intro").addeventlistener("mouseover", e => {
+                e.target.classList.toggle("classname")
+            })
+        </p>
+        </section>
+    </main>
+</body>
+</html>
