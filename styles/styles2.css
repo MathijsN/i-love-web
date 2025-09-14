@@ -1,0 +1,23 @@
+@keyframes appear {
+    0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes disappear {
+    0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+section {
+    display: grid;
+    grid-template-rows: 1fr;
+    
+    div {
+        display: none;
+        animation: appear 2s 2;
+    }
+}
+
+.display {
+    display: block;
+}
