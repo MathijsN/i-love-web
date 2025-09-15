@@ -29,7 +29,7 @@ main {
 
 }
 
-section {
+article {
     transition: 2s;
 }
 
@@ -41,7 +41,7 @@ section {
     
     .display {
         /* height: 0; */
-        transform: translateX(100vw);
+        transform: translateX(120%);
         transition: 2s;
     }
 
