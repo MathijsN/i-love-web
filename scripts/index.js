@@ -1,6 +1,7 @@
-const sections = document.querySelectorAll('section');
+const sections = document.querySelectorAll('main');
 sections.forEach(section => {
     section.addEventListener('click', () => {
-        section.classList.toggle('display');
+        const pElement = document.querySelector('article')
+        pElement.classList.toggle('display');
     });
 });

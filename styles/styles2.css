@@ -10,27 +10,29 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-size: 1rem;
+    overflow: hidden;
 }
 
-body {
+main {
+    display: grid;
+    grid-template: auto / 1fr;
     margin: 1rem;
+
+    @media (width > 768px) and (any-pointer: fine) {
+        grid-template-columns: 1fr 1fr;
+        transition: 2s;
+    }
+
 }
 
 section {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-
-    @media (width > 768px) and (any-pointer: fine) {
-        grid-template-columns: 1fr 0fr;
-        transition: 2s;
-
-        div {
-        text-overflow: ellipsis;
-        min-width: 0px;
-        }
-    }
+    transition: 2s;
 }
+
 @media (width > 768px) and (any-pointer: fine){
     h3 {
         position: sticky;
@@ -38,7 +40,12 @@ section {
     }
     
     .display {
-        grid-template-columns: 1fr 3fr;
+        /* height: 0; */
+        transform: translateX(100vw);
         transition: 2s;
+    }
+
+    main:has(section.display) {
+        grid-template-columns: 1fr 0fr;
     }
 }

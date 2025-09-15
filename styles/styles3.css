@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    margin: 1rem;
+    display: grid;
+    grid-template: auto / 1fr;
+}
