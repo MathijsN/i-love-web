@@ -8,16 +8,37 @@
   100% {opacity: 0;}
 }
 
-section {
-    display: grid;
-    grid-template-rows: 1fr;
-    
-    div {
-        display: none;
-        animation: appear 2s 2;
-    }
+* {
+    box-sizing: border-box;
 }
 
-.display {
-    display: block;
+body {
+    margin: 1rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+
+    @media (width > 768px) and (any-pointer: fine) {
+        grid-template-columns: 1fr 0fr;
+        transition: 2s;
+
+        div {
+        text-overflow: ellipsis;
+        min-width: 0px;
+        }
+    }
+}
+@media (width > 768px) and (any-pointer: fine){
+    h3 {
+        position: sticky;
+        top: 1rem;
+    }
+    
+    .display {
+        grid-template-columns: 1fr 3fr;
+        transition: 2s;
+    }
 }
