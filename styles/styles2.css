@@ -45,7 +45,7 @@ article {
         transition: 2s;
     }
 
-    main:has(section.display) {
+    /* main:has(article.display) {
         grid-template-columns: 1fr 0fr;
-    }
+    } */
 }
