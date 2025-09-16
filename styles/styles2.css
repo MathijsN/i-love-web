@@ -24,9 +24,14 @@ main {
 
     @media (width > 768px) and (any-pointer: fine) {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100%;
         transition: 2s;
     }
 
+}
+
+main:has(.display) {
+    grid-template-rows: 1.5em;
 }
 
 article {
