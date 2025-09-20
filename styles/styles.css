@@ -83,6 +83,7 @@ details[open] > details[open] summary {
 details[open] > summary {
     img {
         rotate: 90deg;
+        width: 1.5rem;
     }
 
     h3 {
