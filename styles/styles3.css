@@ -103,3 +103,14 @@ article {
         align-items: start;
     }
 }
+
+
+details:nth-of-type(2) article {
+    display: grid;
+    grid-template-columns: 
+    if(
+        media(width > 468px): repeat(2, 1fr);
+        media(width > 1279px): repeat(4, 1fr);
+        else: 1fr;
+    );
+}
