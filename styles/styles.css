@@ -1,7 +1,7 @@
 :root {
     interpolate-size: allow-keywords;
 
-    --light-grey: rgb(216, 243, 247);
+    --light-blue: rgb(216, 243, 247);
     --mid-grey: rgb(132, 132, 132);
 }
 
@@ -49,7 +49,7 @@ details[open] summary:hover {
 summary:hover {
     @media (any-pointer: fine) {
         
-        background-color: var(--light-grey);
+        background-color: var(--light-blue);
         border-bottom: 2px solid var(--mid-grey);
     
         h3 {
@@ -67,7 +67,7 @@ summary::-webkit-details-marker {
 } 
 
 details[open] > details[open] {
-    background-color: var(--light-grey);
+    background-color: var(--light-blue);
 }
 
 details[open] > details[open] summary {
@@ -76,11 +76,18 @@ details[open] > details[open] summary {
 
     img {
         rotate: 90deg;
-    }
+   }
 }
 
-details[open] > summary img {
-    rotate: 90deg;
+details[open] > summary {
+    img {
+        rotate: 90deg;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
 }
 
 .sprint {
