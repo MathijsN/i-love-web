@@ -12,7 +12,6 @@ body {
 }
 
 details {
-    interpolate-size: allow-keywords;
     transition: 2s;
     overflow: hidden;
 }
@@ -24,8 +23,17 @@ summary {
     justify-content: space-between;
     padding: 2rem 1rem 1rem;
     border-bottom: 1px solid rgb(132, 132, 132);
+
+    @media (any-pointer: fine) {
+        cursor: pointer;
+    }
 }
 
+
+
+details[open] summary:hover {
+    border-bottom: 1px solid rgb(132, 132, 132);
+}
 
 summary:hover {
     background-color: rgb(245, 245, 245);
@@ -74,8 +82,8 @@ details::details-content {
     block-size: 0;
 
     transition: 
-    block-size 0.2s,
-    content-visibility 0.2s
+    block-size 1s linear(0, 0.21 3.6%, 0.402 7.4%, 0.568 11.3%, 0.711 15.3%, 0.772 17.3%, 0.83 19.4%, 0.882 21.5%, 0.929 23.7%, 0.97 25.9%, 1.008 28.2%, 1.04 30.6%, 1.067 33%, 1.084 34.9%, 1.099 36.9%, 1.111 38.9%, 1.12 41%, 1.127 43.2%, 1.13 45.4%, 1.132 47.7%, 1.13 50.1%, 1.124 54%, 1.111 58.5%, 1.095 62.9%, 1.044 75.5%, 1.03 79.5%, 1.019 83.2%, 1.01 87.3%, 1.004 91.3%, 1.001 95.4%, 1),
+    content-visibility 1s linear(0, 0.21 3.6%, 0.402 7.4%, 0.568 11.3%, 0.711 15.3%, 0.772 17.3%, 0.83 19.4%, 0.882 21.5%, 0.929 23.7%, 0.97 25.9%, 1.008 28.2%, 1.04 30.6%, 1.067 33%, 1.084 34.9%, 1.099 36.9%, 1.111 38.9%, 1.12 41%, 1.127 43.2%, 1.13 45.4%, 1.132 47.7%, 1.13 50.1%, 1.124 54%, 1.111 58.5%, 1.095 62.9%, 1.044 75.5%, 1.03 79.5%, 1.019 83.2%, 1.01 87.3%, 1.004 91.3%, 1.001 95.4%, 1)
     ;
 
     transition-behavior: allow-discrete;
@@ -91,7 +99,11 @@ article {
     padding: 1rem 0;
 }
 
-@media (width > 1279px) {
+article p {
+    max-width: 800px;
+}
+
+/* @media (width > 1279px) {
     
     details {
         display: flex;
@@ -102,15 +114,5 @@ article {
     summary {
         align-items: start;
     }
-}
+} */
 
-
-details:nth-of-type(2) article {
-    display: grid;
-    grid-template-columns: 
-    if(
-        media(width > 468px): repeat(2, 1fr);
-        media(width > 1279px): repeat(4, 1fr);
-        else: 1fr;
-    );
-}
