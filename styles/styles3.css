@@ -38,11 +38,12 @@ details[open] summary:hover {
 summary:hover {
     background-color: rgb(245, 245, 245);
     border-bottom: 2px solid rgb(132, 132, 132);
-    transition: 0.2s;
 
-    h2, img {
-        scale: 1.2;
-        transition: 0.2s;
+    h3 {
+        scale: 1.1;
+    }
+    img {
+        scale: 1.3;
     }
 }
 
