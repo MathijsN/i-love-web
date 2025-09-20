@@ -1,7 +1,7 @@
 :root {
     interpolate-size: allow-keywords;
 
-    --light-grey: rgb(245, 245, 245);
+    --light-grey: rgb(216, 243, 247);
     --mid-grey: rgb(132, 132, 132);
 }
 
@@ -12,6 +12,7 @@
 
 body {
     font-family: sans-serif;
+    background-color:rgb(248, 248, 248)
 }
 
 details {
@@ -57,13 +58,27 @@ summary::-webkit-details-marker {
   display: none;
 } 
 
-details[open] {
+details[open] > details[open] {
     background-color: var(--light-grey);
 }
 
 details[open] > details[open] summary {
+    border-top: 1px solid var(--mid-grey);
+    border-bottom: 0;
+
     img {
         rotate: 90deg;
+    }
+}
+
+details[open] > summary img {
+    rotate: 90deg;
+}
+
+.sprint1 {
+    
+    > summary > img {
+        width: 1.5rem;
     }
 }
 
@@ -121,14 +136,3 @@ article p {
         align-items: start;
     }
 } */
-
-.sprint1 {
-    
-    > summary > img {
-        width: 1.5rem;
-    }
-}
-
-details[open] > summary img {
-    rotate: 90deg;
-}
