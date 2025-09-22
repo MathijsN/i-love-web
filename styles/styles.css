@@ -22,6 +22,10 @@ h1 {
     line-height: 80%;
 }
 
+h4 {
+    margin: 1rem 0;
+}
+
 details {
     transition: 2s;
     overflow: hidden;
