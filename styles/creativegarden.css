@@ -18,12 +18,11 @@ body {
 
 h1 {
     text-transform: uppercase;
-    font-family: "Saira Extra Condensed", sans-serif;
     font-size: clamp(1.3rem, 5vw, 3rem);
     font-weight: 400;
     margin: 2rem 0.5rem;
     border-right: 1px solid var(--cursor-color);
-    animation: blinking 1s steps(1, end) infinite, typing 4s steps(20, end);
+    animation: blinking 1s steps(1, end) infinite, typing 3s steps(30, end);
     overflow: hidden;
     white-space: nowrap;
 }
