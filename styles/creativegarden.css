@@ -119,10 +119,9 @@ section.creative-list {
     }
 }
 
-/* 
-.typewriter-effect {
+.typing-effect {
     display: inline-block;
-} */
+}
 
 @keyframes blinking {
     0% {

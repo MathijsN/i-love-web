@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.grid-link a {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: black;
+    width: 10%;
+    margin: 5rem;
+
+    &:hover {
+        gap: 1.5rem;
+        scale: 1.05;
+    }
+
+    div {
+        @media (width > 768px) {
+            border-radius: 8px;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-color: rgba(156, 158, 187, 0.634);
+            place-content: center;
+            text-align: center;
+            font-size: clamp(3rem, 10vw, 6rem);
+        }
+    }
+}
