@@ -27,7 +27,7 @@ h1 {
     white-space: nowrap;
 }
 
-section {
+section.creative-list {
     a {
         display: grid;
         grid-template-columns: 1fr max-content;
@@ -119,9 +119,10 @@ section {
     }
 }
 
+/* 
 .typewriter-effect {
     display: inline-block;
-}
+} */
 
 @keyframes blinking {
     0% {
