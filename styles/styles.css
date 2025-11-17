@@ -5,14 +5,16 @@
     --mid-grey: rgb(132, 132, 132);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: sans-serif;
-    background-color:rgb(248, 248, 248)
+    background-color: rgb(248, 248, 248)
 }
 
 h1 {
@@ -53,13 +55,14 @@ details[open] summary:hover {
 
 summary:hover {
     @media (any-pointer: fine) {
-        
+
         background-color: var(--light-blue);
         border-bottom: 2px solid var(--mid-grey);
-    
+
         h3 {
             scale: 1.1;
         }
+
         img {
             scale: 1.3;
         }
@@ -68,23 +71,23 @@ summary:hover {
 
 
 summary::-webkit-details-marker {
-  display: none;
-} 
+    display: none;
+}
 
-details[open] > details[open] {
+details[open]>details[open] {
     background-color: var(--light-blue);
 }
 
-details[open] > details[open] summary {
+details[open]>details[open] summary {
     border-top: 1px solid var(--mid-grey);
     border-bottom: 0;
 
     img {
         rotate: 90deg;
-   }
+    }
 }
 
-details[open] > summary {
+details[open]>summary {
     img {
         rotate: 90deg;
         width: 1.5rem;
@@ -97,7 +100,7 @@ details[open] > summary {
 }
 
 .sprint {
-    > summary img {
+    >summary img {
         width: 1.5rem;
     }
 }
@@ -122,13 +125,13 @@ https://www.youtube.com/watch?v=Vzj3jSUbMtI
 details::details-content {
     block-size: 0;
 
-    transition: 
-    block-size 1s linear(0, 0.21 3.6%, 0.402 7.4%, 0.568 11.3%, 0.711 15.3%, 0.772 17.3%, 0.83 19.4%, 0.882 21.5%, 0.929 23.7%, 0.97 25.9%, 1.008 28.2%, 1.04 30.6%, 1.067 33%, 1.084 34.9%, 1.099 36.9%, 1.111 38.9%, 1.12 41%, 1.127 43.2%, 1.13 45.4%, 1.132 47.7%, 1.13 50.1%, 1.124 54%, 1.111 58.5%, 1.095 62.9%, 1.044 75.5%, 1.03 79.5%, 1.019 83.2%, 1.01 87.3%, 1.004 91.3%, 1.001 95.4%, 1),
-    content-visibility 1s linear(0, 0.21 3.6%, 0.402 7.4%, 0.568 11.3%, 0.711 15.3%, 0.772 17.3%, 0.83 19.4%, 0.882 21.5%, 0.929 23.7%, 0.97 25.9%, 1.008 28.2%, 1.04 30.6%, 1.067 33%, 1.084 34.9%, 1.099 36.9%, 1.111 38.9%, 1.12 41%, 1.127 43.2%, 1.13 45.4%, 1.132 47.7%, 1.13 50.1%, 1.124 54%, 1.111 58.5%, 1.095 62.9%, 1.044 75.5%, 1.03 79.5%, 1.019 83.2%, 1.01 87.3%, 1.004 91.3%, 1.001 95.4%, 1)
-    ;
+    transition:
+        block-size 1s linear(0, 0.21 3.6%, 0.402 7.4%, 0.568 11.3%, 0.711 15.3%, 0.772 17.3%, 0.83 19.4%, 0.882 21.5%, 0.929 23.7%, 0.97 25.9%, 1.008 28.2%, 1.04 30.6%, 1.067 33%, 1.084 34.9%, 1.099 36.9%, 1.111 38.9%, 1.12 41%, 1.127 43.2%, 1.13 45.4%, 1.132 47.7%, 1.13 50.1%, 1.124 54%, 1.111 58.5%, 1.095 62.9%, 1.044 75.5%, 1.03 79.5%, 1.019 83.2%, 1.01 87.3%, 1.004 91.3%, 1.001 95.4%, 1),
+        content-visibility 1s linear(0, 0.21 3.6%, 0.402 7.4%, 0.568 11.3%, 0.711 15.3%, 0.772 17.3%, 0.83 19.4%, 0.882 21.5%, 0.929 23.7%, 0.97 25.9%, 1.008 28.2%, 1.04 30.6%, 1.067 33%, 1.084 34.9%, 1.099 36.9%, 1.111 38.9%, 1.12 41%, 1.127 43.2%, 1.13 45.4%, 1.132 47.7%, 1.13 50.1%, 1.124 54%, 1.111 58.5%, 1.095 62.9%, 1.044 75.5%, 1.03 79.5%, 1.019 83.2%, 1.01 87.3%, 1.004 91.3%, 1.001 95.4%, 1);
 
     transition-behavior: allow-discrete;
 }
+
 details[open]::details-content {
     block-size: auto;
 }
@@ -156,3 +159,13 @@ article p {
         align-items: start;
     }
 } */
+
+@font-face {
+    font-family: "Bestefont";
+    src: url("../assets/Bestefont-Regular.otf");
+
+}
+
+.own-font {
+    font-family: Bestefont;
+}
