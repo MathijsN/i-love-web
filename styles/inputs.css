@@ -1,0 +1,5 @@
+input[type="color"] {
+    border-radius: 100%;
+    width: 2rem;
+    aspect-ratio: 1/1;
+}
