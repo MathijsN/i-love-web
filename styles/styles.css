@@ -194,3 +194,12 @@ article p {
 .own-font {
     font-family: Bestefont;
 }
+
+ul li {
+    margin-block: 1rem;
+    list-style: none;
+
+    &:nth-of-type(odd) {
+        font-weight: bold;
+    }
+}
