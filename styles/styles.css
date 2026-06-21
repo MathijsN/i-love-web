@@ -28,7 +28,7 @@ body {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: clamp(2rem, 7.7108vw + .2169rem, 6rem);
     text-align: center;
     margin: 2rem 0;
     line-height: 80%;
@@ -210,20 +210,17 @@ img {
 }
 
 article.smashing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 
-    @media (width > 48em) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+    img {
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
 
-        img {
-            object-fit: cover;
-            aspect-ratio: 1/1;
-        }
-
-        span {
-            grid-column: 1/-1;
-            place-self: center;
-        }
+    span {
+        grid-column: 1/-1;
+        place-self: center;
     }
 }
